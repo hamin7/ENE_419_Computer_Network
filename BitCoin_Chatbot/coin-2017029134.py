@@ -40,7 +40,7 @@ PRE_price = 0
 # function to send the price and UP
 def Send_to_bot(price2):
     global PRE_price
-    bot = telepot.Bot('998729622:AAEXjepiJd-aTL5bO6wqHKBc3EciDTyniJ0')
+    bot = telepot.Bot('***********************************')
 
     print 'Got requests'
 
