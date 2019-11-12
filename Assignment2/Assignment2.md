@@ -40,3 +40,4 @@ At 𝑡5 the sender receives the ACKs 1, 2, 3 the receiver sent at 𝑡2.
 
 These ACKs are outside its window.
 
+http://www.cmlab.csie.ntu.edu.tw/~rod24574575/CN2015/homeworks/hw4_sol.pdf
