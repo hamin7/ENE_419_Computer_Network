@@ -23,6 +23,7 @@ connectionSocket.close()
 
 https://www.keycdn.com/blog/http-cache-headers
 https://stonerain.tistory.com/8
+https://itstory.tk/entry/Spring-MVC-LastModified-IfModifiedSince-%EC%BA%90%EC%8B%9C-%EC%84%A4%EC%A0%95
 
 ### 3. With the SR protocol, it is possible for the sender to receive an ACK for a packet that falls outside of its current window. Is this true of false? Justify your answer briefly.
 SR 프로토콜을 사용하면 송신자가 현재 창 밖에 있는 패킷에 대한 ACK를 수신할 수 있다. 이게 거짓인가? 대답을 짧게 정당화하라.
