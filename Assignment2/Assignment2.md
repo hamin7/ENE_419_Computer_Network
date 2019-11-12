@@ -27,10 +27,16 @@ SR 프로토콜을 사용하면 송신자가 현재 창 밖에 있는 패킷에 
 True.
 
 Suppose the sender has a window size of 3 and sends packets 1, 2, 3 at 𝑡0. 
+
 At 𝑡1 (𝑡1 > 𝑡0) the receiver ACKs 1, 2, 3. 
+
 At 𝑡2 (𝑡2 > 𝑡1) the sender times out and resends 1, 2, 3. 
+
 At 𝑡3 the receiver receives the duplicates and re-acknowledges 1, 2, 3. 
+
 At 𝑡4 the sender receives the ACKs that the receiver sent at 𝑡1 and advances its window to 4, 5, 6. 
+
 At 𝑡5 the sender receives the ACKs 1, 2, 3 the receiver sent at 𝑡2. 
+
 These ACKs are outside its window.
 
