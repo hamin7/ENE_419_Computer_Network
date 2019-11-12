@@ -23,3 +23,13 @@ https://stonerain.tistory.com/8
 
 ### 3. With the SR protocol, it is possible for the sender to receive an ACK for a packet that falls outside of its current window. Is this true of false? Justify your answer briefly.
 SR 프로토콜을 사용하면 송신자가 현재 창 밖에 있는 패킷에 대한 ACK를 수신할 수 있다. 이게 거짓인가? 대답을 짧게 정당화하라.
+
+True.
+Suppose the sender has a window size of 3 and sends packets 1, 2, 3 at 𝑡0. 
+At 𝑡1 (𝑡1 > 𝑡0) the receiver ACKs 1, 2, 3. 
+At 𝑡2 (𝑡2 > 𝑡1) the sender times out and resends 1, 2, 3. 
+At 𝑡3 the receiver receives the duplicates and re-acknowledges 1, 2, 3. 
+At 𝑡4 the sender receives the ACKs that the receiver sent at 𝑡1 and advances its window to 4, 5, 6. 
+At 𝑡5 the sender receives the ACKs 1, 2, 3 the receiver sent at 𝑡2. 
+These ACKs are outside its window.
+
